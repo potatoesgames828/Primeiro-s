@@ -3,59 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Primeiro Site</title>
+  <title>Açaí Raiz | O Puro Sabor da Amazônia</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: system-ui, -apple-system, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
     body {
-      background: #0f172a;
-      color: #f8fafc;
+      background-color: #0f0714;
+      color: #f3e8ff;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
       min-height: 100vh;
       padding: 20px;
     }
-    .card {
-      background: #1e293b;
-      border: 1px solid #334155;
-      padding: 30px;
-      border-radius: 16px;
+    header {
       text-align: center;
-      max-width: 420px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      margin: 30px 0 20px;
+    }
+    .tag {
+      background: #2e0854;
+      color: #a855f7;
+      border: 1px solid #7e22ce;
+      padding: 5px 14px;
+      border-radius: 99px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
     h1 {
-      color: #38bdf8;
-      font-size: 1.6rem;
-      margin-bottom: 12px;
+      font-size: 2.2rem;
+      color: #ffffff;
+      margin-top: 12px;
     }
-    p {
-      color: #94a3b8;
-      line-height: 1.5;
-      margin-bottom: 24px;
+    h1 span {
+      color: #a855f7;
     }
-    .badge {
-      display: inline-block;
-      background: #0284c7;
-      color: #fff;
-      font-weight: 600;
-      padding: 8px 16px;
-      border-radius: 999px;
+    p.sub {
+      color: #c084fc;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+    .menu {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 25px 0;
+    }
+    .item {
+      background: #1c0f2b;
+      border: 1px solid #3b1754;
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .item-info h3 {
+      font-size: 1.1rem;
+      color: #f5d0fe;
+    }
+    .item-info p {
       font-size: 0.85rem;
+      color: #d8b4fe;
+      margin-top: 4px;
     }
-  </style>
-</head>
-<body>
-  <div class="card">
-    <h1>🚀 Site publicado com sucesso!</h1>
-    <p>A ligação entre o GitHub e a Vercel está configurada e a funcionar perfeitamente.</p>
-    <div class="badge">Vercel + GitHub Online</div>
-  </div>
-</body>
-</html>
-
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #4ade80;
+      white-space: nowrap;
+      margin-left: 10px;
+    }
+    .cta-container {
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .btn-whatsapp {
+      display: block;
+      background: #22c55e;
+      color: #052e16;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 16px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(34, 197, 94, 0.4);
+      transition: transform 0.1s ease;
+    }
+    .btn-whatsapp:active {
+      transform: scale(0.98);
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #9333ea
